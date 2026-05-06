@@ -108,16 +108,6 @@ const pageData: any = reactive({
         label: "领取时间",
         prop: "claimTime",
         width: "180px"
-      },
-      {
-        label: "Hash",
-        prop: "blockHash",
-        width: "240px"
-      },
-      {
-        label: "开奖倍数",
-        prop: "multiple",
-        width: "240px"
       }
     ],
     list: [],
