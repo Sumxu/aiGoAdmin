@@ -213,12 +213,11 @@ export const levelMap: SelectOptionMap<string> = {
   3: "超级节点",
   4: "社区节点"
 };
-export const userTypeMap: SelectOptionMap<string> = {
-  0: "无",
-  1: "安品商家",
-  2: "优品区",
-  3: "臻品区",
-  4: "兑换区"
+
+export const betTypeMap: SelectOptionMap<string> = {
+  1: "单双",
+  2: "尾数",
+  3: "牛牛"
 };
 export const betTypeOption: SelectOption<number>[] = [
   {
@@ -226,26 +225,34 @@ export const betTypeOption: SelectOption<number>[] = [
     value: "null"
   },
   {
-    label: "龙",
+    label: "单双",
     value: 1
   },
   {
-    label: "虎",
+    label: "尾数",
     value: 2
-  }
-];
-export const quizClaimStatusOption: SelectOption<number>[] = [
-  {
-    label: "全部",
-    value: "null"
   },
   {
-    label: "未领取",
+    label: "牛牛",
+    value: 3
+  }
+];
+export const predictionContestPageStatusOption: SelectOption<number>[] = [
+  {
+    label: "待开奖",
     value: 0
   },
   {
-    label: "已领取",
+    label: "赢",
     value: 1
+  },
+  {
+    label: "输",
+    value: 2
+  },
+  {
+    label: "和",
+    value: 3
   }
 ];
 export const quizInfoStatusOption: SelectOption<number>[] = [
@@ -266,34 +273,30 @@ export const quizInfoStatusOption: SelectOption<number>[] = [
     value: 2
   }
 ];
+export const quizStatusMap: SelectOptionMap<string> = {
+  0: "待开奖",
+  1: "赢",
+  2: "输",
+  3: "和"
+};
 export const quizStatusOption: SelectOption<number>[] = [
-  {
-    label: "全部",
-    value: "null"
-  },
   {
     label: "待开奖",
     value: 0
   },
   {
-    label: "中奖",
+    label: "赢",
     value: 1
   },
   {
-    label: "未中奖",
+    label: "输",
     value: 2
+  },
+  {
+    label: "和",
+    value: 3
   }
 ];
-export const betTypeMap: SelectOptionMap<string> = {
-  1: "龙",
-  2: "虎"
-};
-
-export const quizStatusMap: SelectOptionMap<string> = {
-  0: "待开奖",
-  1: "中奖",
-  2: "未中奖"
-};
 
 export const quizInfoStatusMap: SelectOptionMap<string> = {
   0: "待开奖",
